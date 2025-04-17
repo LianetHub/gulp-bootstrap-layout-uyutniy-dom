@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Уютный дом | Главная'
+    })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <section class="promo">
+                    <div class="container">
+                        <h1 class="promo__title title-xl text-center ml-auto mr-auto">
+                            Строим дома, <span class="color-accent">в которые захочется возвращаться</span> каждый день
+                        </h1>
+                    </div>
+                    <div class="promo__banner">
+                        <img src="@img/banner.png" class="cover-image" alt="Баннер">
+                    </div>
+                </section>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="text-block__body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-block__caption caption">Миссия и ценности СК «Уютный дом»</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="text-block__title title">Наша цель – не просто строить дома, <span class="color-accent">а создавать уютные пространства для счастливой жизни.</span></h2>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="directions">
+                    <div class="container">
+                        <h2 class="directions__caption caption">Направление строительства</h2>
+                        <ul class="directions__list">
+                            @@loop('./html/templates/_direction.html', './html/json/directions.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="projects">
+                    <div class="container">
+                        <h2 class="projects__caption caption">Популярные проекты в 2025</h2>
+                        <ul class="projects__list">
+                            @@loop('./html/templates/_project-line.html', './html/json/projects.json')
+                        </ul>
+                        <a href="" class="projects__more btn btn-secondary icon-refresh">ЗАГРУЗИТЬ ЕЩЕ</a>
+                        <div class="projects__categories categories">
+                            <div class="row">
+                                <div class="col-xl-3">
+                                    <h2 class="categories__caption caption">Популярные категории</h2>
+                                </div>
+                                <div class="col-xl-9">
+                                    <ul class="categories__list d-flex flex-column">
+                                        <li class="categories__row">
+                                            <div class="categories__row-caption">Дома из бруса</div>
+                                            <div class="categories__row-list d-flex align-items-center flex-wrap mt-3">
+                                                <a href="" class="categories__item category" data-title="одноэтажные"><span>одноэтажные</span></a>
+                                                <a href="" class="categories__item category" data-title="двухэтажные"><span>двухэтажные</span></a>
+                                                <a href="" class="categories__item category" data-title="с мансардой"><span>с мансардой</span></a>
+                                                <a href="" class="categories__item category" data-title="с террасой"><span>с террасой</span></a>
+                                                <a href="" class="categories__item category" data-title="с балконом"><span>с балконом</span></a>
+                                                <a href="" class="categories__item category" data-title="недорогие"><span>недорогие</span></a>
+                                                <a href="" class="categories__item category" data-title="большие"><span>большие</span></a>
+                                                <a href="" class="categories__item category" data-title="до 100 м²"><span>до 100 м²</span></a>
+                                                <a href="" class="categories__item category" data-title="до 6 млн ₽"><span>до 6 млн ₽</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="categories__row">
+                                            <div class="categories__row-caption">Каркасные дома</div>
+                                            <div class="categories__row-list d-flex align-items-center flex-wrap mt-3">
+                                                <a href="" class="categories__item category" data-title="одноэтажные"><span>одноэтажные</span></a>
+                                                <a href="" class="categories__item category" data-title="двухэтажные"><span>двухэтажные</span></a>
+                                                <a href="" class="categories__item category" data-title="с террасой"><span>с террасой</span></a>
+                                                <a href="" class="categories__item category" data-title="с балконом"><span>с балконом</span></a>
+                                                <a href="" class="categories__item category" data-title="недорогие"><span>недорогие</span></a>
+                                                <a href="" class="categories__item category" data-title="от 100 до 150 м²"><span>от 100 до 150 м²</span></a>
+                                            </div>
+                                        </li>
+                                        <li class="categories__row">
+                                            <div class="categories__row-caption">Бани из бруса</div>
+                                            <div class="categories__row-list d-flex align-items-center flex-wrap mt-3">
+                                                <a href="" class="categories__item category" data-title="с террасой"><span>с террасой</span></a>
+                                                <a href="" class="categories__item category" data-title="недорогие"><span>недорогие</span></a>
+                                                <a href="" class="categories__item category" data-title="большие"><span>большие</span></a>
+                                                <a href="" class="categories__item category" data-title="до 500 тыс. ₽"><span>до 500 тыс. ₽</span></a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="text-block__row d-flex align-items-xl-start flex-xl-row flex-column">
+                            <h2 class="text-block__caption caption">Надёжные и уютные дома из дерева</h2>
+                            <div class="text-block__side ml-auto">
+                                <h2 class="text-block__title title">Свой дом дешевле, чем&nbsp;квартира — <span class="color-accent">постройте свою мечту по цене ниже новостройки</span></h2>
+                                <div class="benefits">
+                                    <ul class="benefits__list row">
+                                        @@loop('./html/templates/_benefit.html', './html/json/benefits.json')
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="cases">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "01"
+                                })
+                            </div>
+                            <div class="col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "02"
+                                })
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "03"
+                                })
+                            </div>
+                            <div class="col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "04"
+                                })
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "05"
+                                })
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "06"
+                                })
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "07"
+                                })
+                            </div>
+                            <div class="col-xxl-3 col-md-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "08"
+                                })
+                            </div>
+                            <div class="col-xxl-6">
+                                @@include('./html/templates/_case.html', {
+                                "number": "09"
+                                })
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p class="text-block__caption caption">Ваш идеальный дом — в один клик!</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h2 class="text-block__title title">
+                                    Постройте дом мечты легко и доступно – <span class="color-accent">начните с бесплатной консультации</span>
+                                </h2>
+                                <a href="#bid" data-fancybox class="text-block__btn btn btn-primary icon-arrow">ОСТАВИТЬ ЗАЯВКУ</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="text-block__body">
+                            <div class="text-block__row d-flex align-items-xl-start flex-xl-row flex-column">
+                                <h2 class="text-block__caption caption">Смотрите также</h2>
+                                <div class="text-block__side ml-auto">
+                                    <div class="benefits">
+                                        <ul class="benefits__list row">
+                                            @@loop('./html/templates/_benefit.html', './html/json/benefits-2.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="news">
+                    <div class="container">
+                        <div class="news__body d-flex align-items-xl-start flex-xl-row flex-column">
+                            <h2 class="news__caption caption">Анонсы новостей</h2>
+                            <ul class="news__list">
+                                @@loop('./html/templates/_news.html', './html/json/news.json')
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {})
+        @@include('html/_js.html', {})
+    </body>
+</html>

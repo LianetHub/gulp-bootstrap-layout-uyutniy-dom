@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="ru">
+    @@include('html/_head.html', {
+    'title': 'Уютный дом | Страница проекта'
+    })
+
+    <body>
+        <div class="wrapper">
+            @@include('html/_header.html', {})
+            <main class="page">
+                <section class="project">
+                    <div class="project__image">
+                        <img src="@img/banner.png" class="cover-image" alt="Фото проекта">
+                    </div>
+                    <div class="project__body">
+                        <div class="container">
+                            <div class="project__header d-flex flex-md-row flex-column justify-content-between align-items-md-center">
+                                <nav class="breadcrumbs">
+                                    <ul class="breadcrumbs__list d-flex flex-wrap caption">
+                                        <li class="breadcrumbs__item">
+                                            <a href="" class="breadcrumbs__item">Дома из бруса</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <a href="" class="breadcrumbs__item">Двухэтажные</a>
+                                        </li>
+                                        <li class="breadcrumbs__item">
+                                            <span class="breadcrumbs__item">Проект дома Nº 72</span>
+                                        </li>
+                                    </ul>
+                                </nav>
+                                <a href="" class="project__compare btn btn-primary-outline icon-compare">Сравнить</a>
+                            </div>
+                            <div class="project__row d-flex align-items-center flex-wrap">
+                                <div class="project__row-image">
+                                    <img src="@img/banner.png" class="cover-image" alt="Фото проекта">
+                                </div>
+                                <h1 class="project__row-title">72</h1>
+                            </div>
+                            <div class="project__props row">
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="project__props-column d-flex flex-column pr-4">
+                                        <div class="project__props-caption">Площади</div>
+                                        <div class="project__props-value">42 м² — жилая, 94 м² — общая</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-sm-6">
+                                    <div class="project__props-column d-flex flex-column pr-4">
+                                        <div class="project__props-caption">Размеры</div>
+                                        <div class="project__props-value">12 х 8 м + открытая терраса 2.5 х 1.2 м</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="project__props-column d-flex flex-column pr-4">
+                                        <div class="project__props-caption">Особенности</div>
+                                        <div class="project__props-value">балкон, 2 санузла, 4 жилых комнаты, терраса, сауна, котельная, кухня-гостиная</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <video class="project__video overflow-hidden rounded-sm" muted loop playsinline autoplay="true" preload="metadata" poster="@img/poster.jpg">
+                                <source src="./files/banner.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="text-block__body border-bottom-0">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p class="text-block__caption caption">Тёплое сердце загородной жизни</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h2 class="text-block__title title">Компактный, но просторный, светлыйи тёплый, <span class="color-accent">он стал местом, где шум мегаполиса сменяется шёпотом листьев и&nbsp;треском поленьев в камине</span></h2>
+                                </div>
+                                <div class="col-12">
+                                    <div class="gallery">
+                                        <div class="row">
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/01.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/01.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/02.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/02.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/04.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/04.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/05.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/05.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/07.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/07.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/08.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/08.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/01.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/01.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/02.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/02.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/04.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/04.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/05.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/05.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                            <div class="col-xxl-3 col-lg-4 col-6">
+                                                <a href="@img/projects/07.jpg" data-fancybox="project-gallery" class="gallery__item">
+                                                    <img src="@img/projects/07.jpg" class="cover-image" alt="Фото проекта">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="specification">
+                    <div class="container">
+                        <div class="specification__body">
+                            <div class="row">
+                                <div class="col-xxl-6 col-lg-3">
+                                    <h2 class="specification__caption caption">Характеристики</h2>
+                                </div>
+                                <div class="col-xxl-6 col-lg-9">
+                                    <div class="specification__blocks">
+                                        <div class="specification__block">
+                                            <div class="specification__block-caption">Размеры</div>
+                                            <ul class="specification__list">
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Размеры дома по осям</div>
+                                                    <div class="specification__value text-right">8.0 × 6.0 м</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Этажность</div>
+                                                    <div class="specification__value text-right">2 этажа</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Общая полезная площадь</div>
+                                                    <div class="specification__value text-right">94.5 мг</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Тёплая площадь</div>
+                                                    <div class="specification__value text-right">42.2 м2</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Площадь открытых террас, крылец, балконов</div>
+                                                    <div class="specification__value text-right">13.7 м2</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specification__block">
+                                            <div class="specification__block-caption">Помещения</div>
+                                            <ul class="specification__list">
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Комнат</div>
+                                                    <div class="specification__value text-right">4</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Спален</div>
+                                                    <div class="specification__value text-right">3</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Санузлов</div>
+                                                    <div class="specification__value text-right">2</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="specification__block">
+                                            <div class="specification__block-caption">Особенности</div>
+                                            <ul class="specification__list">
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Крыша</div>
+                                                    <div class="specification__value text-right">Прямая</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Балкон</div>
+                                                    <div class="specification__value text-right">Нет</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Гараж</div>
+                                                    <div class="specification__value text-right">Нет</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Котельная</div>
+                                                    <div class="specification__value text-right">Есть</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Терраса</div>
+                                                    <div class="specification__value text-right">Нет</div>
+                                                </li>
+                                                <li class="specification__row d-flex align-items-center justify-content-between">
+                                                    <div class="specification__name">Эркер</div>
+                                                    <div class="specification__value text-right">Есть</div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="benefits">
+                                        <ul class="benefits__list row">
+                                            @@loop('./html/templates/_benefit.html', './html/json/benefits-3.json')
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="calc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 d-lg-block d-none">
+                                <div class="calc__image">
+                                    <img src="@img/calc.png" class="cover-image rounded-sm" alt="Фото проекта">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="calc__blocks">
+                                    <div class="calc__block">
+                                        <div class="calc__block-title title">Фундамент</div>
+                                        <div class="calc__block-body">
+                                            <a href="" class="calc__btn btn btn-primary w-100">
+                                                <span>Не могу определиться <span class="d-xxl-inline d-none">с выбором</span> / <span class="text-nowrap">Фундамент будет мой</span></span>
+                                                <span class="icon-right"></span>
+                                            </a>
+                                            <div class="calc__items">
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="foundation" checked value="1" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row flex-grow-1">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/fundament-1.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Ленточный фундамент</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side  d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">315 000 ₽</span>
+                                                                    <span class="calc__item-desc">Монолитная лента из бетона и арматуры Наиболее пригоден для деревянных домов</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="foundation" value="2" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/fundament-2.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Свайно-винтовой фундамент</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">115 000 ₽</span>
+                                                                    <span class="calc__item-desc">Для использования на подвижных, плавающих или пучинистых грунтах</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="foundation" value="3" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/fundament-3.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Железобетонные сваи</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">127 000 ₽</span>
+                                                                    <span class="calc__item-desc">Высокая несущая способность, долговечность надёжность. Для любых типов грунтов</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calc__block">
+                                        <div class="calc__block-title title">Комплетация</div>
+                                        <div class="calc__block-body">
+                                            <div class="calc__items">
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="completion" checked value="1" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row flex-grow-1">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/complectation-1.png" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Эконом</span>
+                                                                <span class="calc__item-desc d-block mt-5">профилированный брус 140 × 140 мм</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side  d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">1 394 786 ₽</span>
+                                                                    <span class="calc__item-desc">Наиболее экономичный вариант, до -20С. Нужна отделка снаружи и изнутри, а также утепление</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="completion" value="2" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/complectation-2.png" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Эксклюзив</span>
+                                                                <span class="calc__item-desc d-block mt-5">профилированный брус 140 х 190 мм</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">1 679 006 ₽</span>
+                                                                    <span class="calc__item-desc">Теплый экономичный вариант, для ПМЖ, нужна отделка снаружи и изнутри</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="completion" value="3" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/complectation-2.png" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Эксклюзив</span>
+                                                                <span class="calc__item-desc d-block mt-5">профилированный брус 140 х 190 мм камерная сушка</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">127 000 ₽</span>
+                                                                    <span class="calc__item-desc">Высокая несущая способность, долговечность надёжность. Для любых типов грунтов</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="calc__block">
+                                        <div class="calc__block-title title">Крыша</div>
+                                        <div class="calc__block-body">
+                                            <div class="calc__items">
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="roof" checked value="1" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row flex-grow-1">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/roof-1.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Рубероид</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side  d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">0 ₽</span>
+                                                                    <span class="calc__item-desc">Бесшовный материал плоской рулонной гидроизоляции для кровли из рубероида</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="roof" value="2" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/roof-2.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Металлочерепица</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">193 524 ₽</span>
+                                                                    <span class="calc__item-desc">Кровля из металла любых цветов и рисунков. Оптимум по цене и долговечности</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                                <label class="calc__item rounded-md">
+                                                    <input type="radio" name="roof" value="3" class="calc__item-input hidden" hidden>
+                                                    <span class="calc__item-body rounded-md d-flex">
+                                                        <span class="row">
+                                                            <span class="col-xxl-4">
+                                                                <span class="calc__item-image d-block">
+                                                                    <img src="@img/materials/roof-3.jpg" class="cover-image rounded-md" alt="Фото материала">
+                                                                </span>
+                                                            </span>
+                                                            <span class="col-xxl-3">
+                                                                <span class="calc__item-name d-block">Мягкая кровля</span>
+                                                            </span>
+                                                            <span class="col-xxl-5">
+                                                                <span class="calc__item-side d-flex flex-column align-items-xxl-end">
+                                                                    <span class="calc__item-price">211 098 ₽</span>
+                                                                    <span class="calc__item-desc">Подходит для крыш любой формы, включая сложные конструкции с острыми углами и скатами</span>
+                                                                </span>
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="calc__total">
+                                    <div class="calc__total-caption caption">Итоговая стоимость</div>
+                                    <div class="calc__total-value title">1 394 786 ₽</div>
+                                    <div class="calc__total-footer d-flex justify-content-between align-items-center flex-wrap">
+                                        <div class="calc__total-column">
+                                            <div class="calc__total-text">Срок строительства 5 недель</div>
+                                            <div class="calc__total-text">Гарантия 36 месяцев</div>
+                                        </div>
+                                        <span role="button" class="calc__total-btn btn btn-primary">оставить заявку</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="text-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h2 class="text-block__title title font-weight-bold">
+                                    <span class="color-accent">Дом — это не просто стены и&nbsp;крыша.</span> Это место, где мечты становятся воспоминаниями, а каждый день наполняется уютом и теплом
+                                </h2>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="text-block__logo ml-auto">
+                                    <img src="@img/logo.png" alt="Логотип">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="cases">
+                    <div class="cases__body">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xxl-3 col-md-6">
+                                    @@include('./html/templates/_case.html', {
+                                    "number": "01"
+                                    })
+                                </div>
+                                <div class="col-md-6">
+                                    @@include('./html/templates/_case.html', {
+                                    "number": "02"
+                                    })
+                                </div>
+                                <div class="col-xxl-3 col-md-6">
+                                    @@include('./html/templates/_case.html', {
+                                    "number": "03"
+                                    })
+                                </div>
+                                <div class="col-md-6">
+                                    @@include('./html/templates/_case.html', {
+                                    "number": "04"
+                                    })
+                                </div>
+                                <div class="col-xxl-6">
+                                    @@include('./html/templates/_case.html', {
+                                    "number": "09"
+                                    })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="projects">
+                    <div class="container">
+                        <h2 class="projects__caption caption">Посмотрите похожие проекты</h2>
+                        <ul class="projects__list">
+                            @@loop('./html/templates/_project-line.html', './html/json/projects.json')
+                        </ul>
+                    </div>
+                </section>
+                <section class="faq">
+                    <div class="container">
+                        <h2 class="faq__title title">Ответы на часто задаваемые вопросы</h2>
+                        <div class="faq__row row">
+                            <div class="col-md-6">
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                                <div class="faq__item">
+                                    <span role="button" class="faq__item-btn">Сколько стоит дом</span>
+                                    <p class="faq__item-answer">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum officia quod, repellat praesentium sequi eveniet quaerat, sit dolor beatae atque neque nobis asperiores quos nam tempore quo facere dicta commodi?
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            @@include('html/_footer.html', {})
+        </div>
+        @@include('html/_popup.html', {})
+        @@include('html/_js.html', {})
+    </body>
+</html>
